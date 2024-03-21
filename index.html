@@ -1,0 +1,201 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="./Css/all.css">
+    <link rel="stylesheet" href="./Css/bootstrap.min.css">
+    <link rel="stylesheet" href="./Css/style.css">
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/swiper@11/swiper-bundle.min.css" />
+    <title>Apple Vision Pro</title>
+</head>
+<body>
+    <header class="fixed-top">
+        <div class="container">
+            <div class="d-flex justify-content-between">
+                <div class="logo">
+                    <h3><i class="fa-brands fa-apple me-2"></i>Vision Pro</h3>
+                </div>
+                <nav class="d-flex align-items-center gap-5">
+                    <ul class="d-none d-md-flex gap-3 m-0">
+                        <li>Overview</li>
+                        <li><a href="">Benefits</a></li>
+                        <li><a href="">Reviews</a></li>
+                    </ul>
+                    <button class="btn btn-outline-primary text-capitalize py-1 px-3" onclick="openBuy()">buy now</button>
+                </nav>
+            </div>
+        </div>
+    </header>
+    <div class="buy" id="buy">
+        <div class="buy-text">
+            <h3 class="text-capitalize">buy now</h3>
+            <div class="">
+                <h1 class="text-capitalize">apple vision pro</h1>
+                <p>Discover the Vision Pro. The new generation of Apple's best-in-class augmented reality technology. </p>
+            </div>
+            <div class="buy-price">
+                <h6 class="text-capitalize">price:$4000</h6>
+                <button class="btn btn-outline-primary text-capitalize py-1 px-3">buy now</button>
+            </div>
+            <p>Note: The site is still under trial</p>
+        </div>
+        <div class="overlay" onclick="closeBuy()"></div>
+    </div>
+    <main>
+        <div class="hero"></div>
+    </main>
+    <section class="Design">
+        <div class="container-fluid py-5 px-3">
+            <div class="row">
+                <div class="col-md-5 Design-img">
+                    <img src="https://deepwatermgmt.com/wp-content/uploads/2023/10/Apple-WWCD23-Vision-Pro-with-battery-230605.jpg" alt="" style="height: 100%; width: 100%;">
+                </div>
+                <div class="col-md-7 Design-text text-center py-4">
+                    <h3>Designed by Apple.</h3>
+                    <p>Apple Vision Pro is the result of decades of experience designing high‑performance, mobile, and wearable devices — culminating in the most ambitious product Apple has ever created. Apple Vision Pro integrates incredibly advanced technology into an elegant, compact form, resulting in an amazing experience every time you put it on.</p>
+                </div>
+            </div>
+            <div class="row my-5">
+                <div class="col-md-4 Design-info">
+                    <h6 id="talk1"><span>Front.</span>A singular piece of three-dimensionally formed laminated glass flows into an aluminum alloy frame that curves to wrap around your face.</h6>
+                    <h6 id="talk3"><span>Head bands.</span>The Solo Knit Band provides cushioning, breathability, and stretch, and a Fit Dial lets you adjust Apple Vision Pro precisely to your head. The Dual Loop Band offers an additional option for a personalized fit.</h6>
+                    <h6 id="talk5"><span>Sound.</span> Speakers positioned close to your ears deliver rich Spatial Audio while keeping you aware of your surroundings.</h6>
+                </div>
+                <div class="col-md-4 Design-img rot">
+                    <img src="./img/rot.jpg" alt="" style="height: 100%; width: 100%;">
+                </div>
+                <div class="col-md-4 Design-info">
+                    <h6 id="talk2"><span>Light Seal.</span>The Light Seal gently flexes to conform to your face, delivering a precise fit while blocking out stray light.</h6>
+                    <h6 id="talk4"><span>Power.</span> The external battery supports up to 2 hours of general use and up to 2.5 hours of video playback.1</h6>
+                </div>
+            </div>
+        </div>
+    </section>
+    <section class="visionOS">
+        <h3 class="text-center mb-3">visionOS</h3>
+        <div class="container">
+            <div class="row">
+                <div class="col-md-12 visionOS-img">
+                    <img src="https://www.gizmochina.com/wp-content/uploads/2023/06/apple-vision-pro-visual-search-1.webp" alt="" style="height: 100%; width: 100%;">
+                </div>
+                <div class="row visionOS-text text-center py-4">
+                    <h3 class="col-md-6">Interaction designed for spatial computing.</h3>
+                    <p class="col-md-6">Built on the foundation of macOS, iOS, and iPadOS, visionOS enables powerful spatial experiences. Control Apple Vision Pro with your eyes, hands, and voice — interactions feel intuitive and magical. Simply look at an element, tap your fingers together to select, and use the virtual keyboard or dictation to type.</p>
+                </div>
+            </div>
+        </div>
+    </section>
+    <section class="Apps py-5 mb-3">
+        <div class="row">
+            <div class="col-md-12 Apps-img">
+                <h5>Free your desktop.<br>And your apps will follow.</h5>
+            </div>
+        </div>
+        <div class="container">
+            <div class="row Apps-text text-center py-4">
+                <h3 class="col-md-6">Your apps live in your space.</h3>
+                <p class="col-md-6">With Apple Vision Pro, you have an infinite canvas that transforms how you use the apps you love. Arrange apps anywhere and scale them to the perfect size, making the workspace of your dreams a reality — all while staying present in the world around you. Browse the web in Safari, create a to-do list in Notes, chat in Messages, and seamlessly move between them with a glance.</p>
+            </div>
+        </div>
+    </section>
+    <section class="Benefits">
+        <div class="row">
+            <div class="Benefits-text Benefits-text1 col-md-3 px-5 border-end">
+                <h3>Immersive Experience</h3>
+                <p>The Apple Vision Pro offers an unparalleled immersive experience, blending AR and VR seamlessly. Its high-resolution display and advanced sensors create a vivid, lifelike virtual environment that’s unlike anything currently available.</p>
+            </div>
+            <div class="Benefits-text col-md-3 px-5 border-end">
+                <h3>Innovative Design</h3>
+                <p>Apple’s commitment to sleek, user-friendly design is evident in the Vision Pro. Its comfortable fit and intuitive controls make extended usage effortless, appealing to users across various demographics.</p>
+            </div>
+            <div class="Benefits-text Benefits-text1 col-md-3 px-5 border-end">
+                <h3>Wide Range of Applications</h3>
+                <p>From gaming and entertainment to professional training and education, the Apple Vision Pro opens up a world of possibilities. Its versatility makes it a valuable tool for different sectors, enhancing learning, creativity, and productivity.</p>
+            </div>
+            <div class="Benefits-text col-md-3 px-5">
+                <h3>Integration with Apple Ecosystem</h3>
+                <p>The device’s seamless integration with the Apple ecosystem enhances its functionality. Users can effortlessly sync their data, access apps, and continue their work or play across multiple Apple devices.</p>
+            </div>
+        </div>
+    </section>
+    <section class="m2 py-5">
+        <div class="row">
+            <div class="col-md-12 m2-img"></div>
+        </div>
+        <div class="container">
+            <div class="m2-text text-center py-4">
+                <h3 class="col-md-12">Revolutionary dual‑chip performance.</h3>
+                <p class="col-md-12">A unique dual‑chip design enables the spatial experiences on Apple Vision Pro. The powerful M2 chip simultaneously runs visionOS, executes advanced computer vision algorithms, and delivers stunning graphics, all with incredible efficiency. And the brand-new R1 chip is specifically dedicated to process input from the cameras, sensors, and microphones, streaming images to the displays within 12 milliseconds — for a virtually lag-free, real-time view of the world.</p>
+            </div>
+        </div>
+    </section>
+    <section class="Reviews">
+        <div class="swiper mySwiper">
+            <div class="swiper-wrapper">
+              <div class="swiper-slide">
+                <div class="swiper-text">
+                    <h5>Reviews</h5>
+                    <h3>Comfortable and light, attractive design that does not cause headaches, very nice</h3>
+                    <h6>ali khan</h6>
+                </div>
+              </div>
+              <div class="swiper-slide">
+                <div class="swiper-text">
+                    <h5>Reviews</h5>
+                    <h3>The best product in the last 10 years, Apple is always the best</h3>
+                    <h6>ana sdiq</h6>
+                </div>
+              </div>
+              <div class="swiper-slide">
+                <div class="swiper-text">
+                    <h5>Reviews</h5>
+                    <h3>Watching movies is a very wonderful and different experience</h3>
+                    <h6>fuad asif</h6>
+                </div>
+              </div>
+              <div class="swiper-slide">
+                <div class="swiper-text">
+                    <h5>Reviews</h5>
+                    <h3>Neat and easy to use</h3>
+                    <h6>mhammed daaud</h6>
+                </div>
+              </div>
+              <div class="swiper-slide">
+                <div class="swiper-text">
+                    <h5>Reviews</h5>
+                    <h3>Good, wonderful, excellent, awesome, creativity, the best</h3>
+                    <h6>salh nader</h6>
+                </div>
+              </div>
+            </div>
+            <div class="swiper-button-next"></div>
+            <div class="swiper-button-prev"></div>
+            <div class="swiper-pagination"></div>
+          </div>
+    </section>
+    <section class="Security py-5">
+        <div class="container">
+            <div class="row">
+                <div class="col-md-12 Security-text text-center">
+                    <h5>Privacy and Security</h5>
+                    <h3>When it comes to privacy, we don’t blink.</h3>
+                    <p><span>Privacy and security built in.</span> Like every Apple product and service, Apple Vision Pro was designed to help protect your privacy and keep you in control of your data. It builds on the foundation of existing Apple privacy and security features with new technologies like Optic ID, a secure authentication system that uses the uniqueness of your iris.</p>
+                </div>
+            </div>
+        </div>
+    </section>
+    <footer class="text-white py-3">
+        <div class="container">
+            <div class="row">
+                <div class="col-md-12 text-center">
+                    <p class="fs-4 mb-0">© 2024 All rights reserved by Abobakr Almashhor</p>
+                </div>
+            </div>
+        </div>
+    </footer>
+    <script src="https://cdn.jsdelivr.net/npm/swiper@11/swiper-bundle.min.js"></script>
+    <script src="./Js/bootstrap.bundle.min.js"></script>
+    <script src="./Js/script.js"></script>
+</body>
+</html>

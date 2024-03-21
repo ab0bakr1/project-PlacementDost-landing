@@ -1,0 +1,389 @@
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    list-style: none;
+}
+header{
+    background-color: black;
+}
+header .logo h3{
+    font-size: 2.5rem;
+    color: white;
+}
+nav li a,
+nav li{
+    font-size: 1.2rem;
+    text-decoration: none;
+    color: rgb(255, 255, 255);
+    text-transform: capitalize;
+}
+@media screen and (max-width: 768px) {
+    nav{
+        display: none!important;
+    }
+}
+/* header end */
+
+/* buy */
+.buy{
+    display: none;
+    position: fixed;
+    height: 100svh;
+    width: 100%;
+    z-index: 2;
+}
+.buy-text{
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+    text-align: center;
+    background-color: #FAFAFA;
+    padding: 20px;
+    border-radius: 10px;
+    height: 60%;
+    display: flex;
+    flex-direction: column;
+    justify-content: space-around;
+    align-items: center;
+}
+.buy-text h3{
+    font-size: clamp(2rem, 5vw, 3rem);
+    text-transform: capitalize;
+    font-family:Georgia, 'Times New Roman', Times, serif;
+} 
+.buy-text p{
+    font-size:clamp(1rem, 2vw, 1.5rem);
+    font-family:Georgia, 'Times New Roman', Times, serif;
+}
+.buy-price{
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    gap: 30px;
+}
+.buy-price h6{
+    font-size: clamp(1rem, 2vw, 1.5rem);
+    font-family:Georgia, 'Times New Roman', Times, serif;
+}
+.buy-price button{
+    font-size: clamp(1rem, 2vw, 1.5rem);
+    font-family:Georgia, 'Times New Roman', Times, serif;
+}
+.buy-text p{
+    font-size:clamp(1rem, 1.8vw, 1.2rem);
+    font-weight: 400;
+}
+.overlay{
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100svh;
+    background-color: rgba(0, 0, 0, 0.5);
+    z-index: -1;
+}
+/* main hero  */
+.hero{
+    background-image: url(https://www.roadtovr.com/wp-content/uploads/2023/06/maxresdefault-12.jpg);
+    background-repeat: no-repeat;
+    background-size: contain;
+    background-position: center;
+    background-attachment: fixed;
+    height: 100vh;
+    width: 100%;
+    background-color: black;
+}
+/* main hero  end */
+
+/* Design */
+.Design{
+    background-color: #FAFAFA;
+}
+.Design-img{
+    width: 100%;
+}
+.Design-text h3{
+    font-size: clamp(2rem, 5vw, 3rem);
+    text-transform: capitalize;
+}
+.Design-text p{
+    font-size:clamp(1rem, 2vw, 1.5rem);
+    font-weight: 400;
+    color: rgba(0, 0, 0, 0.57);
+    margin-top: 20px;
+}
+.Design-img.rot{
+    position: sticky;
+    top: 0;
+    max-height: 110vh;
+}
+.Design-info{
+    justify-content: space-evenly;
+    display: flex;
+    flex-direction: column;
+    height: 300svh;
+}
+.Design-info h6{
+    font-size: clamp(1rem, 2vw, 1.5rem);
+    font-weight: 400;
+    color: rgba(0, 0, 0, 0.57);
+    margin-top: 20px;
+    text-transform: capitalize;
+    opacity: 1;
+    transition: 0.5s;
+}
+.Design-info h6 span{
+    color: black;
+    text-transform: uppercase;
+}
+@media screen and (max-width: 768px) {
+    .Design-info{
+        justify-content: center;
+        display: flex;
+        flex-direction: column;
+        height: auto;
+    }
+    .Design-info h6{
+        opacity: 1!important;
+    }
+    .Design-img.rot{
+        display: none;
+    }
+}
+/* Design end */
+
+/* visionOS */
+.visionOS{
+    background-color: #fff;
+}
+.visionOS h3{
+    color: rgb(0, 0, 0);
+    text-transform: capitalize;
+    padding: 20px;
+    font-size: clamp(2rem, 5vw, 3rem);
+}
+.visionOS-text h3{
+    font-size: clamp(2rem, 5vw, 3rem);
+    text-transform: capitalize;
+}
+.visionOS-text p{
+    font-size:clamp(1rem, 2vw, 1.5rem);
+    font-weight: 400;
+    color: rgba(0, 0, 0, 0.57);
+    margin-top: 20px;
+}
+.visionOS-img{
+    width: 100%;
+}
+/* visionOS end */
+
+/* Apps */
+.Apps-img{
+    background-image: url(https://www.uploadvr.com/content/images/size/w1024/format/webp/2023/06/Apple-Vision-Pro-Introduction.png);
+    background-repeat: no-repeat;
+    background-size: cover;
+    background-position: center;
+    background-attachment: fixed;
+    position: relative;
+    top: 0;
+    height: 100vh;
+    width: 100%;
+}
+.Apps-img::after{
+    content: "";
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    background-color: rgba(0, 0, 0, 0.061);
+}
+.Apps-img h5{
+    font-size: clamp(2rem, 3.5vw, 4rem);
+    text-align: center;
+    font-weight: 800;
+    color: rgb(0, 0, 0);
+    text-shadow: #fff 0px 0px 2px;
+    margin-top: 20px;
+    text-transform: capitalize;
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+}
+.Apps-text h3{
+    font-size: clamp(2rem, 5vw, 3rem);
+    text-transform: capitalize;
+    margin-top: 20px;
+}
+.Apps-text p{
+    font-size:clamp(1rem, 2vw, 1.5rem);
+    font-weight: 400;
+    color: rgba(0, 0, 0, 0.57);
+    margin-top: 20px;
+}
+/* Apps end */
+
+/* Benefits */
+.Benefits{
+    background-color: #FAFAFA;
+}
+.Benefits-text{
+    padding-block:20% 10%;
+    border: right 2px #000;
+
+}
+.Benefits-text1{
+    padding-block:10% 20% ;
+}
+.Benefits-text h3{
+    font-size: clamp(1rem, 4vw, 2.5rem);
+    text-transform: capitalize;
+    text-align: center;
+    font-family: 'Times New Roman', Times, serif;
+}
+.Benefits-text p{
+    font-size:clamp(1rem, 2vw, 1.5rem);
+    font-weight: 400;
+    color: rgba(0, 0, 0, 0.57);
+    margin-top: 20px;
+}
+/* Benefits end */
+/* M2 */
+.m2{
+    background-color: black;
+}
+.m2-img{
+    background: url(https://pbs.twimg.com/media/F6VBQymb0AAszT7?format=png&name=small);
+    background-repeat: no-repeat;
+    background-size: contain;
+    background-position: center;
+    height: 100vh;
+    width: 100%;
+}
+.m2-text{
+    padding: 0 20%;
+}
+.m2-text h3{
+    font-size: clamp(2rem, 5vw, 3rem);
+    text-transform: capitalize;
+    margin-top: 20px;
+    color: #ffffff;
+}
+.m2-text p{
+    font-size:clamp(1rem, 2vw, 1.5rem);
+    font-weight: 400;
+    color: rgba(255, 255, 255, 0.57);
+    margin-top: 20px;
+}
+@media screen and (max-width: 768px) {
+    .m2-text{
+        padding: 0;
+    }
+}
+/* M2 end */
+
+/* Reviews */
+.Reviews{
+    height: 80svh;
+}
+.swiper {
+    width: 100%;
+    height: 100%;
+}
+.swiper-text{
+    height: 100%;
+    width: 100%;
+    padding: 0 20%;
+    text-align: center;
+    display: flex;
+    justify-content: space-around;
+    align-items: center;
+    flex-direction: column;
+}
+.swiper-text h5{
+    font-family: 'Times New Roman', Times, serif;
+    font-size: clamp(2rem, 4vw, 2.5rem);
+    font-weight: 800;
+    color: rgb(0, 0, 0);
+    text-transform: capitalize;
+    letter-spacing: 5px;
+}
+.swiper-text h5::after{
+    content: "";
+    display: block;
+    width: 100%;
+    height: 3px;
+    background-color: rgb(0, 0, 0);
+    margin-top: 20px;
+}
+.swiper-text h3{
+    font-size: clamp(2rem, 4vw, 3.8rem);
+    text-transform: capitalize;
+    margin-top: 20px;
+    font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+}
+.swiper-text h6{
+    font-size: clamp(1rem, 2vw, 1.5rem);
+    font-weight: 800;
+    color: rgb(0, 0, 0);
+    margin-top: 20px;
+    text-transform: capitalize;
+}
+.swiper-slide {
+    text-align: center;
+    font-size: 18px;
+    background: #fff;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+.swiper-slide img {
+    display: block;
+    width: 100%;
+    height: 100%;
+    object-fit: cover;
+}
+
+/* Reviews end */
+/* Security */
+.Security{
+    background-color: #FAFAFA;
+    padding: 0 30%;
+}
+.Security-text h3{
+    font-size: clamp(2rem, 4vw, 3.8rem);
+    text-transform: capitalize;
+    margin-top: 20px;
+}
+.Security-text h5{
+    font-size: clamp(1rem, 2vw, 1.5rem);
+    font-weight: 800;
+    color: rgb(0, 0, 0);
+    margin-top: 20px;
+    text-transform: capitalize;
+}
+.Security-text p{
+    font-size:clamp(1rem, 2vw, 1.5rem);
+    font-weight: 400;
+    color: rgba(0, 0, 0, 0.437);
+    margin-top: 20px;
+}
+.Security-text span{
+    color: rgb(0, 0, 0);
+    text-transform: uppercase;
+}
+@media screen and (max-width: 768px) {
+    .Security{
+        padding: 0;
+    }
+}
+/* Security end */
+
+/* Footer */
+footer{
+    background-color: #000000;
+}
+/* Footer end */
